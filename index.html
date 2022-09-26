@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tittle{border: 1px solid black;height: 40px;display: flex;justify-content: center;align-items: center;}
+        section{display: grid;
+            grid-template-areas: 
+            "one two three four" 
+            "five five five four"
+            "foot foot foot foot"
+            ;
+            border: 1px solid red;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 40px 400px 40px;
+        }
+        section div{border: 1px solid black;}
+        .c4{grid-area: four;}
+        .c5{grid-area: five;}
+        .c6{grid-area: foot;}
+    </style>
+</head>
+<body>
+    <div class="tittle" >Tittle</div>
+    <section>
+        <div class="c1">Home</div>
+        <div class="c2">About</div>
+        <div class="c3">Content</div>
+        <div class="c4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis beatae cupiditate dolorum quia sequi maiores repellendus enim accusantium nisi?</div>
+        <div class="c5">
+            <h3>header</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, eos! Molestiae quia fugit a quisquam.</p>
+        </div>
+        <div class="c6 tittle">Closing Notes</div>
+    </section>
+</body>
+</html>
